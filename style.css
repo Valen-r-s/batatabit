@@ -1,0 +1,541 @@
+:root {
+  --primary-color: #f7931a;
+  --primary-color-soft: #ffe9d5;
+  --secondar-color: #1a9af7;
+  --secondar-color-soft: #e7f5ff;
+  --color-black: #282623;
+  --color-warm-black: #201e1c;
+  --color-darker-light: #BABABA;
+  --color-off-light: #FAF8F7;
+  --color-light: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 6rem;
+  align-self: center;
+}
+
+.header-title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 90rem;
+  height: 218px;
+  margin-top: 3rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header-title-container h1 {
+  font-size: 2.4rem;
+  color: var(--color-light);
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.header-title-container p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--primary-color-soft);
+}
+
+.header-title-container .header-button{
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 270px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--color-off-light);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.header-button span{
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('./assets/icon/down-arrow.svg');
+}
+
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-off-light);
+}
+
+.main-exchange-container{
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-exchange-container-title{
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-exchange-container .background-img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url('./assets/img/Bitcoin.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-exchange-container-title h2{
+  font-size: 2.4rem;
+  margin-bottom: 28px;
+  line-height: 2.6rem;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.main-exchange-container-title p{
+  margin-bottom: 28px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.main-tables-container--slider{
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type:x proximity;
+}
+
+.main-currency-table{
+  width: 70%;
+  min-width: 235px;
+  max-width: 250px;
+  height: 360px ;
+  margin: 0 50px;
+  scroll-snap-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table-title{
+  margin-bottom: 15px;
+  margin-left: 16px;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: bold;
+  text-align: left;
+}
+.one{
+  color: var(--primary-color);
+}
+
+.two{
+  color: var(--secondar-color);
+}
+
+.currency-table-container{
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.currency-table-container table{
+  width: 100%;
+  height: 100%;
+}
+
+.currency-table-container td{
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+  color: var(--color-darker-light); 
+  background-color: var(--color-light);
+}
+
+.currency-table-container .table__top-left {
+  border-radius: 8px 0 0 0;
+}
+
+.currency-table-container .table__top-right {
+  border-radius: 0 8px 0 0;
+}
+
+.currency-table-container .table__bottom-left {
+  border-radius: 0 0 0 8px;
+}
+
+.currency-table-container .table__bottom-right {
+  border-radius: 0 0 8px 0;
+}
+
+.currency-table-container .table__right{
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #757575;
+}
+
+.currency-table-container .down-arrow{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background-image: url('./assets/icon/trending-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.currency-table-container .up-arrow{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background-image: url('./assets/icon/trending-up.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.currency-table-date{
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.date-one{
+  background-color: var(--primary-color-soft);
+}
+.date-two{
+  background-color: var(--secondar-color-soft);
+}
+
+.currency-table-date p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: var(--color-warm-black);
+}
+
+.main-product-detail{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 12px;
+  background-color: var(--color-warm-black);
+}
+
+.product-detail--batata-logo{
+  position: absolute;
+  width: 40px;
+  height: 24px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url('./assets/icon/batata.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-detail--title{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 36px;
+  text-align: center;
+} 
+
+.product-detail--title h2{
+  font-size: 2.4rem;
+  margin-bottom: 20PX;
+  color: var(--color-light);
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+.product-detail--title P{
+  font-size: 1.4rem;
+  margin-bottom: 24PX;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 152px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--color-black);
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.16);
+}
+
+.product-detail--card .icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.clock{
+  background-image: url('./assets/icon/clock.svg');
+}
+
+.eye{
+  background-image: url('./assets/icon/eye.svg');
+}
+
+.money{
+  background-image: url('./assets/icon/dollar-sign.svg');
+}
+.check{
+  background-image: url('./assets/icon/check-circle.svg');
+}
+
+.product-detail--card .product--card-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--color-light);
+}
+
+.product-detail--card .product--card-body{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+  margin-top: 8px;
+}
+
+.bitcoin-img-container{
+  width: 100%;
+  min-width: 320px;
+  height: 387px;
+  background-image: url('./assets/img/bitcoinbaby2x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bitcoin-img-container h2{
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--color-light);
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.main-plans-container{
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.plans--tittle{
+  width: 95%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 32px ;
+}
+
+.plans--tittle h2{
+  padding-top: 50px;
+  font-size: 2.4rem;
+  color: var(--color-warm-black);
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+
+.plans--tittle p{
+  padding-top: 24px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.plans-container--slider{
+  display: flex;
+  gap: 12px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type:x proximity;
+}
+
+.plans-container--card{
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 250px;
+  height: 248px;
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16) ;
+}
+
+.recomendado{
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  padding: 6px;
+  left: calc(50% - 60px);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  background-color: var(--primary-color);
+  color: var(--color-light);
+  font-weight: bold;
+}
+
+.plan-card--title{
+  padding-top: 30px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.plan-card--price{
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: var(--color-black);
+}
+
+.plan-card--price span{
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  left: 55px;
+  top: 60px;
+}
+
+.plan-card--saving{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.plan-card--ca{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: var(--color-off-light);
+  border: 2px solid var(--primary-color);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  color: var(--color-warm-black);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--ca span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-image: url('./assets/icon/orange-right-arrow.svg');
+  vertical-align: text-bottom;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary-color);
+}
+
+footer section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+footer .left ul{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.left li{
+  margin: 8px 0;
+}
+
+.left a{
+  text-decoration: none;
+  color: var(--color-light);
+}
+
