@@ -4,7 +4,8 @@ This project focused on designing and developing a web page using a "Mobile Firs
 
 ## Screenshots
 
-![Web Screenshot](https://drive.google.com/file/d/17K3HPTi-ocPxDu6F-V_M9oFoleaFgmXk/view)
+![Web Screenshot](https://github.com/Valen-r-s/batatabit/assets/137853819/77352cd5-fb7a-4cd6-9df5-1417a72697a5)
+
 
 ## 👩🏼‍💻Authors
 
