@@ -2,7 +2,7 @@
 
 This project focused on designing and developing a web page using a "Mobile First" approach and applying responsive design techniques. The design was based on a prototype created in Figma, ensuring a seamless transition from the design phase to implementation. The page was created with the aim of providing an optimal experience for users, regardless of the device they are using to access the site.
 
-## Screenshots
+## 📸Screenshots
 
 ![Web Screenshot](https://github.com/Valen-r-s/batatabit/assets/137853819/77352cd5-fb7a-4cd6-9df5-1417a72697a5)
 
